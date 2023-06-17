@@ -1,5 +1,6 @@
 import "./styles/main.css"
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
@@ -11,13 +12,20 @@ import Project from "../src/pages/Project";
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <BrowserRouter>
 
-      {/* <Home/> */}
-      {/* <Projects/> */}
-      <Project/>
-      {/* <Contacts/>       */}
-      <Footer/>
+        <Navbar/>
+
+        <Routes>
+          <Route path="/" Component={Home}/>
+          <Route path="/projects" Component={Projects}/>
+          <Route path="/contacts" Component={Contacts}/>
+          <Route path="/project" Component={Project}/>
+        </Routes>
+
+        <Footer/>
+
+      </BrowserRouter>
     
     </div>
   );
