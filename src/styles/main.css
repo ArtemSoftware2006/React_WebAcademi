@@ -47,8 +47,7 @@
 
 html,
 body {
-	display: flex;
-	flex-direction: column;
+
 	min-height: 100vh;
 
 	font-family: 'DM Sans', sans-serif;
@@ -57,6 +56,14 @@ body {
 	/* Light mode */
 	background-color: var(--page-bg);
 	color: var(--text-color);
+}
+#root{
+	min-height: 100vh;
+}
+.App{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 /* General */
@@ -73,6 +80,7 @@ body {
 
 .section {
 	padding: 70px 0;
+	flex-grow: 1;
 }
 
 .title-1 {

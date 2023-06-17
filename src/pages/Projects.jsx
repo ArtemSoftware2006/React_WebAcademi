@@ -2,7 +2,7 @@ import React from 'react'
 
 import Project from "../components/project/Project";
 
-import {Projects} from "../helpers/projectsList"
+import {projectList} from "../helpers/projectsList";
 
 export default function Projects() {
   return (
@@ -11,9 +11,9 @@ export default function Projects() {
             <h2 className="title-1">Projects</h2>
             <ul className="projects">
                
-               {Projects.map(() =>{
+               {projectList.map((project, index) =>{
                   return(
-                    <Project/>
+                    <Project key={index} title={project.title} img={project.img} />
                   )
                })}
 
