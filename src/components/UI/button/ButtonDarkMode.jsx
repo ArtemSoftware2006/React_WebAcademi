@@ -1,12 +1,14 @@
 import React from 'react'
-import { useState , useEffect, useRef} from 'react';
+import {  useEffect, useRef} from 'react';
+import { useLocalStorage } from '../../../utils/UseLocalStorage';
+
 import sun from "../../../img/icons/moon.svg";
 import moon from "../../../img/icons/sun.svg"
 
 export default function ButtonDarkMode() {
   
-    const [darkMode, setDarkMode] =  useState('ligth')
     const btnRef = useRef(null) 
+    const [darkMode, setDarkMode] = useLocalStorage('darkMode','ligth')
 
     useEffect(() =>{
         if(darkMode === "dark"){
@@ -19,6 +21,7 @@ export default function ButtonDarkMode() {
         }
 
     }, [darkMode])
+
     const toggleDarkMode = () =>{
       setDarkMode((currentValue) =>{
         return currentValue === "dark"? "ligth" : "dark";
