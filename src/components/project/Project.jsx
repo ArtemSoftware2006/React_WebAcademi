@@ -1,14 +1,15 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
 import "../../styles/main.css"
 
-export default function Project({title, img}) {
+export default function ProjectItem({title, img, index}) {
   return (
-
-    <li className="project">
-        <a href="./project-page.html">
-            <img src={img} alt="Project img" className="project__img"/>
-            <h3 className="project__title">{title}</h3>
-        </a>
-    </li>
+    <NavLink to={`/project/${index}`}>
+       <li className="project">
+          <img src={img} alt="Project img" className="project__img"/>
+          <h3 className="project__title">{title}</h3>
+      </li>
+    </NavLink>
   )
 }

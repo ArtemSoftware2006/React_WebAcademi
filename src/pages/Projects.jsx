@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Project from "../components/project/Project";
+import ProjectItem from "../components/project/Project";
 
 import {projectList} from "../helpers/projectsList";
 
@@ -13,7 +13,12 @@ export default function Projects() {
                
                {projectList.map((project, index) =>{
                   return(
-                    <Project key={index} title={project.title} img={project.img} />
+                    <ProjectItem 
+                      key={index} 
+                      title={project.title} 
+                      img={project.img} 
+                      index={index}
+                      />
                   )
                })}
 
