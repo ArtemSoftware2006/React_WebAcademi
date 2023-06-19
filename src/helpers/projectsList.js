@@ -8,7 +8,8 @@ import picture_06 from "../img/projects/06.jpg";
 const projectList = [
     {
         title: "Gaming streaming portal",
-        img : picture_01
+        img : picture_01,
+        skill: "C# PHP"
     },
     {
         title: "Gaming streaming portal",

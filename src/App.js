@@ -22,7 +22,7 @@ function App() {
           <Route path="/" Component={Home}/>
           <Route path="/projects" Component={Projects}/>
           <Route path="/contacts" Component={Contacts}/>
-          <Route path="/project" Component={Project}/>
+          <Route path="/project/:id" Component={Project}/>
         </Routes>
 
         <Footer/>
