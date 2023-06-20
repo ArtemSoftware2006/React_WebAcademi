@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
+### React приложение от курса WebKademi
+Это учебный проект, созданный с целью изучения React. В приложении можно просматривать статьи.
+Я работал с React-компонентами, хуками useState, useEffect, useRef. Создал костомный хук useLocalStorage.
 
 ### `npm start`
 
