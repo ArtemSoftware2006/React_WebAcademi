@@ -4,7 +4,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### React приложение от курса WebKademi
 Это учебный проект, созданный с целью изучения React. В приложении можно просматривать статьи.
-Я работал с React-компонентами, хуками useState, useEffect, useRef. Создал костомный хук useLocalStorage.
+Я работал с 
+ - React-компонентами.
+ - Хуками useState, useEffect, useRef.
+ - Создал костомный хук useLocalStorage. 
+ - Настроил постраничную навигацию.
+ - Переключение с дневной на ночную тему
+
+### Для запуска приложения понадобится 
+ - скачать Node.js (https://nodejs.org/ru/download)
+ - установить npm командой `npm install`
+ - после установки зависимостей запустить React-приложение `npm start`
 
 ### `npm start`
 
